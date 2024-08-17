@@ -1,1 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telegram x Holder</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="logoX.png" type="image/x-icon">
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <div class="nav-container">
+                <nav class="nav">
+                    <ol class="ol">
+                        <li class="links">Home</li>
+                        <li class="links">Conatct</li>
+                        <li class="links">User</li>
+                        <li class="links">About</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main class="main">
 
+    </main>
+    <footer class="footer">
+
+    </footer>
+    <script async src="https://telegram.org/js/telegram-widget.js?22" data-telegram-login="xholderbot" data-size="medium" data-radius="7" data-onauth="onTelegramAuth(user)" data-request-access="write"></script>
+<script type="text/javascript">
+  function onTelegramAuth(user) {
+    alert('Logged in as ' + user.first_name + ' ' + user.last_name + ' (' + user.id + (user.username ? ', @' + user.username : '') + ')');
+  }
+</script>
+</body>
+</html>
